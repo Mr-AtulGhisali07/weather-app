@@ -4,7 +4,7 @@
     height: 100%;
     min-height: 100vh;
     background-color: rgb(255, 255, 255);
-    background-image: url("/public/images/BG3.jpg ");
+    background-image: url("/public/images/mainbg.jpg ");
     background-clip:content-box;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +32,7 @@
     text-align: center;
     height: 670px;;
     padding: 30px;
-    background-image: url("/public/images/1242.jpg ");
+    background-image: url("/public/images/weather1.jpg ");
     background-size: cover;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-shadow: inset 0px 0px 6px 1px rgba(198, 210, 233, 0.456);   

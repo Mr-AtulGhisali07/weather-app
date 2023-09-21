@@ -15,7 +15,7 @@ const Weather = () => {
     visibility: 1000,
     weather: "Clouds",
     country: "IN",
-    image: "./images/weather-icon-day-free-png.webp",
+    image: "./images/clouds.webp",
   });
 
   const [serchName, setSerchName] = useState("");
@@ -32,19 +32,21 @@ const Weather = () => {
           console.log(res.data);
           let imgPath = "";
           if (res.data.weather[0].main == "Clouds") {
-            imgPath = "./images/weather-icon-day-free-png.webp";
+            imgPath = "./images/clouds.webp";
           } else if (res.data.weather[0].main == "Rain") {
-            imgPath = "./images/rain-weather-icon-png.webp";
+            imgPath = "./images/rain.webp";
           } else if (res.data.weather[0].main == "Drizzle") {
-            imgPath = "./images/Drizzle-png.webp";
+            imgPath = "./images/Drizzle.webp";
           } else if (res.data.weather[0].main == "Mist") {
             imgPath = "./images/mist.png";
           } else if (res.data.weather[0].main == "Clear") {
             imgPath = "./images/sun.png";
           } else if (res.data.weather[0].main == "Smoke") {
             imgPath = "./images/smoke.webp";
+          } else if (res.data.weather[0].main == "Snow") {
+            imgPath = "./images/snow.webp";
           } else {
-            imgPath = "./images/weather-icon-day-free-png.webp";
+            imgPath = "./images/clouds.webp";
           }
 
           setData({
